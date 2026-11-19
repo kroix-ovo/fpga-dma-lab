@@ -1,0 +1,32 @@
+name: Simulation
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  rtl:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        simulator: [icarus, verilator]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: sudo apt-get update && sudo apt-get install -y iverilog verilator
+      - run: python -m pip install -r requirements.lock
+      - run: python tools/generate_interface.py --check
+      - run: python -m unittest discover -s tests -v
+      - run: python tools/run.py --sim ${{ matrix.simulator }} --seeds 100 --demo all
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidence-${{ matrix.simulator }}
+          path: artifacts/${{ matrix.simulator }}/*.*
+  windows-reference:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python tools/generate_interface.py --check
+      - run: python -m unittest discover -s tests -v

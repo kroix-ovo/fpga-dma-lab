@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "queue_capacity": 16,
+  "active_timeout": "halted",
+  "host_timeout": "retains ownership",
+  "queued_cancel": "CANCELLED completion without DMA; healthy queue resumed",
+  "mapping_lifetime": "retained until root/link teardown"
+}

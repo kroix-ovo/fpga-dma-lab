@@ -1,0 +1,12 @@
+# Tested Python 3.13 environment; runtime dependencies pinned for repeatability.
+cocotb==2.1.0
+cocotb-bus==0.3.0
+cocotbext-axi==0.1.28
+cocotbext-pcie==0.2.16
+find-libpython==0.5.1
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.2.0
+scapy==2.8.0

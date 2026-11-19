@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+artifacts/*/build/
+*.vcd
+*.fst
+
+# Local machine metadata and credentials
+.DS_Store
+.env
+.env.*
+!.env.example

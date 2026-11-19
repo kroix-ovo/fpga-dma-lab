@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/alexforencich/verilog-pcie",
+  "commit": "25156a9a162c41c60f11f41590c7d006d015ae5a",
+  "files": [
+    "dma_if_pcie.v",
+    "dma_if_pcie_rd.v",
+    "dma_if_pcie_wr.v",
+    "pcie_axil_master.v",
+    "priority_encoder.v",
+    "pulse_merge.v"
+  ],
+  "testbench_files": [
+    "tb/pcie_if.py"
+  ]
+}

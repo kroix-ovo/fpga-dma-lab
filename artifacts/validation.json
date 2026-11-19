@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-11-19T04:21:16.151631+00:00",
+  "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.1",
+  "simulations": {
+    "icarus": {
+      "seed_count": 100,
+      "tlp_count": 851,
+      "demos": {
+        "telemetry": {
+          "crc_stale_torn_truncation": "passed",
+          "projected_entities": 3
+        },
+        "iq": {
+          "samples": 256,
+          "bit_exact": true,
+          "max_float_error_lsb": 0.5,
+          "stall_checks": true
+        }
+      },
+      "rtl_test_cases": 2
+    },
+    "verilator": {
+      "seed_count": 100,
+      "tlp_count": 851,
+      "demos": {
+        "telemetry": {
+          "crc_stale_torn_truncation": "passed",
+          "projected_entities": 3
+        },
+        "iq": {
+          "samples": 256,
+          "bit_exact": true,
+          "max_float_error_lsb": 0.5,
+          "stall_checks": true
+        }
+      },
+      "rtl_test_cases": 2
+    }
+  },
+  "sha256": {
+    "python/fpga_dma_lab/__init__.py": "f0e64e0e256d0865e32a1fe181acebe7f9ed7227cea12b18c025269bfa19b338",
+    "python/fpga_dma_lab/client.py": "b46819ab3f653e946f99f7927fca951521c36f2109476e34bebc45ea2d6c9f3a",
+    "python/fpga_dma_lab/examples.py": "4d32bfefbac201c41c4854b3bbd69673e02a4bd17b0406cbdcd6b7c8ad4967af",
+    "python/fpga_dma_lab/registers.py": "2040ae3520a155d940ef127abd13093259faaa9a0a91a95e6c630bf795dd3ead",
+    "rtl/dma_lab.sv": "e06cc4a18ada2d7d51a656e8166a964f3a28f3111b1b3b6896c8d5afc03cfb3b",
+    "rtl/fir7.sv": "434a7a638442728396da576ad25806a00fd4928c19acfcab0b454f8101336a12",
+    "rtl/interface.svh": "9110c8b523fc9332be711b46a6922fd40aaa7ac9e033fb7fd3350864530a2926",
+    "rtl/lab_control.sv": "1d4a8f77a8f3bae0807c80d10283f886a4cd6d7ff8b9eead4e1c047053a25584",
+    "rtl/project_point.sv": "deffee798905c0b68e3efe13bb117ea52572184b8648feda12f046da31381ccf",
+    "rtl/snapshot_guard.sv": "202fae463d8a4425593cf43ede8ca18269a26379c3fefa21cfc1c25cb4166719",
+    "sim/backend.py": "a026021831028327bb4b93094087f6391918ad3e17be32f325a6d840400b7f14",
+    "sim/pcie_if.py": "2d721e185950e8dd49e85bed5ad35fdcbfdc3dbcc859e17b5bb46ff5a8ed794f",
+    "sim/test_system.py": "4f4993710133a88c45653f1a2610c2e54c1a0b37d3bce90121061ee52f3bbb2a",
+    "spec/interface.json": "7f6a61977e03803f93ef1896051205adb7cf0613c9f3b26f746152c06e77e01c",
+    "vendor/dma_if_pcie.v": "5255c2291f3d431df000d88995c9ea29490634b194437d0ecf71e39bf124d8f3",
+    "vendor/dma_if_pcie_rd.v": "9dd0b5efbcd2e4608ded63a9ea7853692bcb65d334625b081c85e86cbe475fbb",
+    "vendor/dma_if_pcie_wr.v": "0f4a262f4353ed17bc0f9caa36ce25d7f7570d139557e06b796edf4c86eacfe7",
+    "vendor/pcie_axil_master.v": "4b66bd5dc9c5ed0c2616773a310e0deb6b3e0ecd7958f176a33b850feeaf7767",
+    "vendor/priority_encoder.v": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5",
+    "vendor/pulse_merge.v": "be969a374712e76002434cdf6c1ba55f31a250a8b7e088aa1d301b031b39ba6f"
+  },
+  "scope": "Local transaction-level RTL simulation; no synthesis, physical board, Windows driver or IOMMU validation",
+  "icarus_version": "Icarus Verilog version 13.0 (stable) (v13_0)",
+  "verilator_version": "Verilator 5.048 2026-04-26 rev vUNKNOWN-built20260426"
+}

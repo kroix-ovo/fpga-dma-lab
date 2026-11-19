@@ -1,0 +1,9 @@
+test_corruption_and_length (test_examples.ExampleContracts.test_corruption_and_length) ... ok
+test_impulse_rounding_and_dc (test_examples.ExampleContracts.test_impulse_rounding_and_dc) ... ok
+test_signed_projection_and_behind_camera (test_examples.ExampleContracts.test_signed_projection_and_behind_camera) ... ok
+test_snapshot_roundtrip_and_empty (test_examples.ExampleContracts.test_snapshot_roundtrip_and_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
